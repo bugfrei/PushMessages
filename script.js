@@ -15,8 +15,8 @@ button.addEventListener("click", () =>
                     body: "This is more Text",
                     // Im Hintergrund oder mit Geräuch
                     "silent": false,
-                    // Vibration
-                    "vibrate": true,
+                    // Vibrationsmuster für Handys
+                    "vibrate": [255, 0, 255, 0],
                     // Zusätzliche Daten, nützlich für Events, s.u.
                     "data": { some: "data" },
                     // Mit Tag: Eindeutige Nachricht,
@@ -24,7 +24,6 @@ button.addEventListener("click", () =>
                     // Sie wird nur aktualisiert
                     // Ohne Tag: Jedes Senden = eine Nachricht
                     "tag": "XYZABC"
-
                 });
 
             notification.addEventListener("click", e =>
